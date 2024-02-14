@@ -1,0 +1,19 @@
+{
+  "name": "task-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client-install": "npm install --prefix task-management-fe",
+    "start": "node server.js --prefix task-management-be",
+    "server": "nodemon server.js --prefix task-management-be",
+    "client": "npm start --prefix task-management-fe",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
